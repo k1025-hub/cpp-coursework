@@ -3,6 +3,12 @@ project(cpp_exam)
 
 set(CMAKE_CXX_STANDARD 14)
 
+add_executable(cpp_exam main.cpp Song.cpp
+        Song.cpp)
+include_directories(.)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra")
+
 # 启用测试
 enable_testing()
 
